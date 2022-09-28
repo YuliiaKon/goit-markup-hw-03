@@ -1,12 +1,3 @@
-/* color: #2F303A
-background: #F5F4FA;
-background footer: #2F303A;
-background heroi: #F5F5F5;
-color logo: #2196F3 #000000
-color text: #757575;
-color h: #212121;*/
-
-/*  Загальні стилі*/
 
 :root {
     --primary-text-color: #212121;
@@ -22,7 +13,73 @@ color h: #212121;*/
     color: var(--primary-text-color);
 }
 
-/* ШАПКА, header */
+/* ======== обнулення ======== */
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style-type: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
+button {
+    cursor: pointer;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ============ ШАПКА, header ============*/
+
+.page-header {
+padding-top: 32px;
+padding-bottom: 32px;
+}
 
 .logo {
     color: #2196F3;
@@ -41,20 +98,32 @@ color h: #212121;*/
 }
 
 .site-nav {
+    display: flex;
     color: aqua;
     font-style: normal;
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
-    line-height: 1, 14;
+    line-height: 1,14;
     letter-spacing: 0.02em;
+    column-gap: 50px;
 }
 
+.page-header-container {
+    display: flex;
+    align-items: center;
+}
 
-.list {
-    list-style: none;
-    font-style: normal;
-    text-decoration: none;
+.page-navigation {
+    display: flex;
+    align-items: center;
+    column-gap: 93px;
+}
+
+.page-header-contact {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
 }
 
 .mail-header {
@@ -63,8 +132,9 @@ color h: #212121;*/
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
-    line-height: 1, 14;
+    line-height: 1,14;
     letter-spacing: 0.02em;
+    margin-right: 50px;
 }
 
 .mail-header:hover {
@@ -81,7 +151,7 @@ color h: #212121;*/
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
-    line-height: 1, 14;
+    line-height: 1,14;
     letter-spacing: 0.02em;
 }
 
@@ -118,7 +188,7 @@ color h: #212121;*/
 }
 
 
-/* КНОПКИ*/
+/* ============ КНОПКИ ============*/
 
 .button-secondary {
     color: var(--primary-text-color);
@@ -135,6 +205,29 @@ color h: #212121;*/
     background: #2196F3;
 }
 
+
+/*============ ГЕРОЙ ============*/
+
+.hero {
+    background: #2F303A;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.hero-title {
+        width: 696px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1,36;
+        text-align: center;
+        color: #FFFFFF;
+}
+
 .button-primery {
     color: #FFFFFF;
     background: #2196F3;
@@ -143,6 +236,10 @@ color h: #212121;*/
     font-weight: 700;
     font-size: 16px;
     line-height: 1, 87;
+    display: block;
+    min-width: 216px;
+    margin: 0 auto;
+    padding: 10px 32px;
 }
 
 .button-primery:hover {
@@ -155,17 +252,39 @@ color h: #212121;*/
     background: #188CE8;
 }
 
-/* Інші розділи, main */
+/*============ НАШІ ПЕРЕВАГИ ============*/
 
-.hero {
-    color: #FFFFFF;
-    background: #2F303A;
-    font-family: 'Roboto';
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    margin: 0 auto;
-    text-align: center;
+.our-power-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1,14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+}
+
+.our-power-list {
+    display: flex;
+    column-gap: 30px;
+/* flex-wrap: wrap;*/
+}
+
+.our-power-item {
+    flex-basis: calc((100%-3*30)/4);
+    }
+
+.our-power-text {
+    color: var(--title-text-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1, 71;
+    letter-spacing: 0.03em;
+}
+
+
+/* ============ WHOT-WE-DO ============*/
+.whot-we-do {
+    padding-bottom: 47px;
 }
 
 .h2 {
@@ -184,33 +303,75 @@ color h: #212121;*/
     text-transform: uppercase;
 }
 
-.title-text {
-    color: var(--title-text-color);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1, 71;
+.whot-we-do-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1,16;
+    text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
+    color: var(--primary-text-color);
 }
 
-.team-name {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1, 18;
+.whot-we-do-list {
+    display: flex;
+    column-gap: 30px;
 }
 
-.job-title {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1, 18;
-    letter-spacing: 0.03em;
-    color: var(--title-text-color);
+.whot-we-do-item {
+    flex-basis: calc((100%-2*30)/3);
 }
+
+/*============ НАША КОМАНДА ============*/
 
 .our-team {
     background: #F5F4FA;
+    padding-top: 47px;
+}
+.our-team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1,16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    margin-bottom: 50px;
 }
 
-/* Футер */
+.our-team-list {
+    display: flex;
+    column-gap: 30px;
+}
+
+.our-team-item {
+    flex-basis: calc((100%-3*30)/4);
+}
+
+.our-team-photo {
+    margin-bottom: 30px;
+}
+
+
+.our-team-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1,18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    margin-bottom: 10px;
+}
+
+.our-team-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1, 18;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--title-text-color);
+}
+
+/* ============ Футер ============*/
 
 .footer {
     background: #2F303A;
