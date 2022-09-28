@@ -187,25 +187,6 @@ padding-bottom: 32px;
     color: var(--accent-color);
 }
 
-
-/* ============ КНОПКИ ============*/
-
-.button-secondary {
-    color: var(--primary-text-color);
-    background: var(--button-background)
-}
-
-.button-secondary:hover {
-    color: #FFFFFF;
-    background: #2196F3;
-}
-
-.button-secondary:focus {
-    color: #FFFFFF;
-    background: #2196F3;
-}
-
-
 /*============ ГЕРОЙ ============*/
 
 .hero {
@@ -253,6 +234,9 @@ padding-bottom: 32px;
 }
 
 /*============ НАШІ ПЕРЕВАГИ ============*/
+.our-power {
+    padding-bottom: 47px;
+}
 
 .our-power-title {
     font-weight: 700;
@@ -261,6 +245,7 @@ padding-bottom: 32px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-text-color);
+    margin-bottom: 10px;
 }
 
 .our-power-list {
@@ -270,22 +255,22 @@ padding-bottom: 32px;
 }
 
 .our-power-item {
-    flex-basis: calc((100%-3*30)/4);
+    flex-basis: calc((100% - 3 * 30) / 4);
     }
 
 .our-power-text {
     color: var(--title-text-color);
     font-weight: 400;
     font-size: 14px;
-    line-height: 1, 71;
+    line-height: 1,71;
     letter-spacing: 0.03em;
 }
 
 
 /* ============ WHOT-WE-DO ============*/
 .whot-we-do {
-    padding-bottom: 47px;
-}
+    padding-top: 47px;
+    }
 
 .h2 {
     font-weight: 700;
@@ -319,7 +304,7 @@ padding-bottom: 32px;
 }
 
 .whot-we-do-item {
-    flex-basis: calc((100%-2*30)/3);
+    flex-basis: calc((100% - 2 * 30) / 3);
 }
 
 /*============ НАША КОМАНДА ============*/
@@ -328,6 +313,7 @@ padding-bottom: 32px;
     background: #F5F4FA;
     padding-top: 47px;
 }
+
 .our-team-title {
     font-weight: 700;
     font-size: 36px;
@@ -344,7 +330,7 @@ padding-bottom: 32px;
 }
 
 .our-team-item {
-    flex-basis: calc((100%-3*30)/4);
+    flex-basis: calc((100% - 3 * 30) /4);
 }
 
 .our-team-photo {
@@ -371,11 +357,91 @@ padding-bottom: 32px;
     color: var(--title-text-color);
 }
 
+.our-team-border {
+
+}
+
+/*============FILTER============*/
+
+.site-filter {
+    padding-top: 47px;
+    padding-bottom: 50px;
+    display: flex;
+    column-gap: 8px;
+    align-self: center;
+    flex-basis: calc((100% - 4 * 8) / 5);
+}
+
+
+.button-secondary {
+    color: var(--primary-text-color);
+    background: var(--button-background);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1,62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    display: block;
+    min-width: 103px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
+    
+}
+
+.button-secondary:hover {
+    color: #FFFFFF;
+    background: #2196F3;
+}
+
+.button-secondary:focus {
+    color: #FFFFFF;
+    background: #2196F3;
+}
+
+/* ============WORK============*/
+.work {
+    background: #F5F5F5;
+    padding-top: 28px;
+    padding-bottom: 47px;
+    display: flex;
+    column-gap: 30 px;
+    flex-wrap: wrap;
+}
+
+.work-item {
+    flex-basis: calc((100% - 2 * 30) / 3);
+}
+
+.work-border {
+    border: 1 solid #212121;
+}
+
+.work-title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+        color: var(--primary-text-color);
+        margin-top: 20 px;
+        margin-bottom: 4px;
+}
+.work-text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1,88;
+        letter-spacing: 0.03em;
+        color: var(--title-text-color);
+}
+
 /* ============ Футер ============*/
 
 .footer {
     background: #2F303A;
     text-decoration: none;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .logo-footer {
@@ -386,7 +452,7 @@ padding-bottom: 32px;
     color: #2196F3;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1, 19;
+    line-height: 1,19;
     letter-spacing: 0.03em;
 }
 
@@ -394,13 +460,15 @@ padding-bottom: 32px;
     color: #FFFFFF;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1, 19;
+    line-height: 1,19;
     letter-spacing: 0.03em;
 }
 
 .address {
     font-style: normal;
     text-decoration: none;
+    padding-top: 20px;
+
 }
 
 .white-address {
