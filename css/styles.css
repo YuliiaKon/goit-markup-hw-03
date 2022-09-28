@@ -427,23 +427,22 @@ padding-bottom: 32px;
 }
 
 .work-title {
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 2;
-        letter-spacing: 0.06em;
-        color: var(--primary-text-color);
-        margin-bottom: 4 px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--primary-text-color);
+    margin-bottom: 4 px;
 }
 .work-text {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1,88;
-        letter-spacing: 0.03em;
-        margin-bottom: 20px;
-        color: var(--title-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1,88;
+    letter-spacing: 0.03em;
+    margin-bottom: 20px;
+    color: var(--title-text-color);
 }
 
-.border: 1px solid #EEEEEE;
 
 /* ============ Футер ============*/
 
