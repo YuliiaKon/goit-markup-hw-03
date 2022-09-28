@@ -190,6 +190,15 @@ padding-bottom: 32px;
     cursor: pointer
 }
 
+.frame {
+position: absolute;
+border: 1px solid #ECECEC;
+}
+
+.line {
+position: absolute;
+}
+
 /*============ ГЕРОЙ ============*/
 
 .hero {
