@@ -1,4 +1,3 @@
-
 :root {
     --primary-text-color: #212121;
     --title-text-color: #757575;
@@ -82,6 +81,21 @@ padding-top: 32px;
 padding-bottom: 32px;
 }
 
+.page-header-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    flex-basis: calc((100% - 2 * 30) / 3);
+}
+
+.page-navigation {
+    display: flex;
+    align-items: center;
+    column-gap: 93px;
+}
+
+
 .logo {
     color: #2196F3;
     font-family: Raleway, bold;
@@ -110,19 +124,24 @@ padding-bottom: 32px;
     column-gap: 50px;
 }
 
-.page-header-container {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    flex-basis: calc((100% - 2 * 30) / 3);
+.nav-text {
+    color: var(--primary-text-color);
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1, 14;
+    letter-spacing: 0.02em;
 }
 
-.page-navigation {
-    display: flex;
-    align-items: center;
-    column-gap: 93px;
+.nav-text:hover {
+    color: var(--accent-color);
 }
+
+.nav-text:focus {
+    color: var(--accent-color);
+}
+
 
 .page-header-contact {
     display: flex;
@@ -169,26 +188,6 @@ padding-bottom: 32px;
 
 .cursor {
     cursor: pointer
-}
-
-/* Кольори тексту var*/
-
-.nav-text {
-    color: var(--primary-text-color);
-    font-style: normal;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1, 14;
-    letter-spacing: 0.02em;
-}
-
-.nav-text:hover {
-    color: var(--accent-color);
-}
-
-.nav-text:focus {
-    color: var(--accent-color);
 }
 
 /*============ ГЕРОЙ ============*/
@@ -366,7 +365,7 @@ padding-bottom: 32px;
 }
 
 
-/*============FILTER============*/
+/*============FILTER в ПОРТФОЛІО============*/
 
 .site-filter {
     padding-top: 47px;
@@ -378,6 +377,8 @@ padding-bottom: 32px;
     justify-content: center;
 }
 
+/* .site-filter-item {
+} */
 
 .button-secondary {
     color: var(--primary-text-color);
@@ -393,8 +394,6 @@ padding-bottom: 32px;
     padding-bottom: 6px;
     padding-left: 22px;
     padding-right: 22px;
-    
-    
 }
 
 .button-secondary:hover {
@@ -415,13 +414,12 @@ padding-bottom: 32px;
     row-gap: 30px;
 }
 
-.work-photo {
-    margin-bottom: 20px;
-
-}
-
 .work-item {
     flex-basis: calc((100% - 2 * 30) / 3);
+}
+
+.work-photo {
+    margin-bottom: 20px;
 }
 
 .work-border {
@@ -444,6 +442,8 @@ padding-bottom: 32px;
         margin-bottom: 20px;
         color: var(--title-text-color);
 }
+
+.border: 1px solid #EEEEEE;
 
 /* ============ Футер ============*/
 
