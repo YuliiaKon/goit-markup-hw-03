@@ -74,6 +74,7 @@ button {
     margin-right: auto;
 }
 
+
 /* ============ ШАПКА, header ============*/
 
 .page-header {
@@ -112,6 +113,9 @@ padding-bottom: 32px;
 .page-header-container {
     display: flex;
     align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    flex-basis: calc((100% - 2 * 30) / 3);
 }
 
 .page-navigation {
@@ -361,19 +365,17 @@ padding-bottom: 32px;
     color: var(--title-text-color);
 }
 
-.our-team-border {
-
-}
 
 /*============FILTER============*/
 
 .site-filter {
     padding-top: 47px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     display: flex;
     column-gap: 8px;
     align-self: center;
     flex-basis: calc((100% - 4 * 8) / 5);
+    justify-content: center;
 }
 
 
@@ -386,11 +388,12 @@ padding-bottom: 32px;
     text-align: center;
     letter-spacing: 0.03em;
     display: block;
-    min-width: 103px;
+    min-width: 74px;
     padding-top: 6px;
     padding-bottom: 6px;
     padding-left: 22px;
     padding-right: 22px;
+    
     
 }
 
@@ -406,12 +409,15 @@ padding-bottom: 32px;
 
 /* ============WORK============*/
 .work {
-    background: #F5F5F5;
-    padding-top: 28px;
-    padding-bottom: 47px;
     display: flex;
-    column-gap: 30 px;
+    column-gap: 30px;
     flex-wrap: wrap;
+    row-gap: 30px;
+}
+
+.work-photo {
+    margin-bottom: 20px;
+
 }
 
 .work-item {
@@ -428,14 +434,14 @@ padding-bottom: 32px;
         line-height: 2;
         letter-spacing: 0.06em;
         color: var(--primary-text-color);
-        margin-top: 20 px;
-        margin-bottom: 4px;
+        margin-bottom: 4 px;
 }
 .work-text {
         font-weight: 400;
         font-size: 16px;
         line-height: 1,88;
         letter-spacing: 0.03em;
+        margin-bottom: 20px;
         color: var(--title-text-color);
 }
 
