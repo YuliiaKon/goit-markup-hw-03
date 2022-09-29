@@ -79,7 +79,8 @@ button {
 .page-header {
 padding-top: 32px;
 padding-bottom: 32px;
-}
+border-bottom: 1px solid #ECECEC;
+ }
 
 .page-header-container {
     display: flex;
@@ -190,7 +191,7 @@ padding-bottom: 32px;
     cursor: pointer
 }
 
-.frame {
+/* .frame {
 position: absolute;
 border: 1px solid #ECECEC;
 }
@@ -198,6 +199,10 @@ border: 1px solid #ECECEC;
 .line {
 position: absolute;
 }
+*/
+
+.border-bottom: {   
+    border: 1px solid tomato;}
 
 /*============ ГЕРОЙ ============*/
 
