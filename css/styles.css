@@ -80,7 +80,6 @@ button {
 .page-header {
 padding-top: 32px;
 padding-bottom: 32px;
-border-bottom: 1px solid #ECECEC;
  }
 
 .page-header-container {
@@ -192,9 +191,6 @@ border-bottom: 1px solid #ECECEC;
 .cursor {
     cursor: pointer
 }
-
-/*.border-bottom: {   
-    border: 1px solid tomato;} */
 
 /*============ ГЕРОЙ ============*/
 
