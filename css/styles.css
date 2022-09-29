@@ -445,6 +445,10 @@ border-bottom: 1px solid #ECECEC;
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
     border-top: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 24px;
+    padding-left: 24px;
 }
 
 .work-title {
@@ -453,17 +457,12 @@ border-bottom: 1px solid #ECECEC;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--primary-text-color);
-    margin-top: 20px;
-    margin-left: 24px;
-    margin-bottom: 4 px;
 }
 .work-text {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
-    margin-left: 24px;
-    margin-bottom: 20px;
     color: var(--title-text-color);
 }
 
